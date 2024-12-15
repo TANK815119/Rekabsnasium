@@ -1,0 +1,30 @@
+To get to environment:
+-navigate to the unity project then run venv
+cd C:\Users\reidj\Unity Projects\Rekabnasium
+venv\Scripts\activate
+
+To run always:
+mlagents-learn --run-id=[whatever]
+
+To run with special hyperparameters:
+mlagents-learn config/configuration.yaml --run-id=[whatever]
+
+To run with special hyperparameters and from a pervious brain:
+--put ONNX file in the slot in unity
+mlagents-learn config/configuration.yaml --initialize-from=[previosWhatever] --run-id=[whatever]
+
+To visualize:
+-open brand new command prompt
+-navigate to the unity project then run venv
+cd C:\Users\reidj\Unity Projects\Rekabnasium
+venv\scripts\activate
+tensorboard --logdir results or results/{run_name}
+-open the localhost url
+
+Other Notes:
+-neural network is stored in "results" in the ONNX files
+-hyperparameters are stored in "config" in the .yaml files
+- When launching Tensorboard, don't hesitate to give the folder where the results are in the command you type (ex: logdir=C:/user/MLProject/results), instead of typing "results"
+--force suffix overites
+--resume continus training
+--configr file must be specified for resumption

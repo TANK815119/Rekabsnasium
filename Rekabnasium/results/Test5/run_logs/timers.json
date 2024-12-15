@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1732911085",
+        "python_version": "3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\reidj\\Unity Projects\\Rekabnasium\\venv\\Scripts\\mlagents-learn --run-id=Test5 --resume",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.5.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1732911099"
+    },
+    "total": 14.234115899999779,
+    "count": 1,
+    "self": 0.005324999999174906,
+    "children": {
+        "run_training.setup": {
+            "total": 0.02301549999992858,
+            "count": 1,
+            "self": 0.02301549999992858
+        },
+        "TrainerController.start_learning": {
+            "total": 14.205775400000675,
+            "count": 1,
+            "self": 9.450000015931437e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 14.152862400000231,
+                    "count": 1,
+                    "self": 14.152862400000231
+                },
+                "trainer_threads": {
+                    "total": 6.000000212225132e-07,
+                    "count": 1,
+                    "self": 6.000000212225132e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.05281790000026376,
+                    "count": 1,
+                    "self": 0.000681599999552418,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.052136300000711344,
+                            "count": 1,
+                            "self": 0.052136300000711344
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

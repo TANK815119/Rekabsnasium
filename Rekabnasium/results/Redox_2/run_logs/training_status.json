@@ -1,0 +1,29 @@
+{
+    "3DTarget": {
+        "checkpoints": [
+            {
+                "steps": 23385,
+                "file_path": "results\\Redox_2\\3DTarget\\3DTarget-23385.onnx",
+                "reward": -25.671981561303138,
+                "creation_time": 1733845363.3703322,
+                "auxillary_file_paths": [
+                    "results\\Redox_2\\3DTarget\\3DTarget-23385.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 23385,
+            "file_path": "results\\Redox_2\\3DTarget.onnx",
+            "reward": -25.671981561303138,
+            "creation_time": 1733845363.3703322,
+            "auxillary_file_paths": [
+                "results\\Redox_2\\3DTarget\\3DTarget-23385.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

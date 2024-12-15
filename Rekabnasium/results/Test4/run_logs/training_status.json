@@ -1,0 +1,29 @@
+{
+    "ReachTarget": {
+        "checkpoints": [
+            {
+                "steps": 379871,
+                "file_path": "results\\Test4\\ReachTarget\\ReachTarget-379871.onnx",
+                "reward": -32.656348051446855,
+                "creation_time": 1732861661.3959498,
+                "auxillary_file_paths": [
+                    "results\\Test4\\ReachTarget\\ReachTarget-379871.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 379871,
+            "file_path": "results\\Test4\\ReachTarget.onnx",
+            "reward": -32.656348051446855,
+            "creation_time": 1732861661.3959498,
+            "auxillary_file_paths": [
+                "results\\Test4\\ReachTarget\\ReachTarget-379871.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

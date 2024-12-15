@@ -1,0 +1,65 @@
+{
+    "3DTarget": {
+        "checkpoints": [
+            {
+                "steps": 125999997,
+                "file_path": "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-125999997.onnx",
+                "reward": 6.087265429440244,
+                "creation_time": 1733434217.3555076,
+                "auxillary_file_paths": [
+                    "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-125999997.pt"
+                ]
+            },
+            {
+                "steps": 126499994,
+                "file_path": "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-126499994.onnx",
+                "reward": 6.385939358255348,
+                "creation_time": 1733434577.223923,
+                "auxillary_file_paths": [
+                    "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-126499994.pt"
+                ]
+            },
+            {
+                "steps": 126999944,
+                "file_path": "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-126999944.onnx",
+                "reward": 5.850958317518234,
+                "creation_time": 1733434936.6549122,
+                "auxillary_file_paths": [
+                    "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-126999944.pt"
+                ]
+            },
+            {
+                "steps": 127499947,
+                "file_path": "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-127499947.onnx",
+                "reward": 5.924443276032157,
+                "creation_time": 1733435294.2452466,
+                "auxillary_file_paths": [
+                    "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-127499947.pt"
+                ]
+            },
+            {
+                "steps": 127806291,
+                "file_path": "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-127806291.onnx",
+                "reward": 6.3311937893590615,
+                "creation_time": 1733435588.3901324,
+                "auxillary_file_paths": [
+                    "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-127806291.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 127806291,
+            "file_path": "results\\3DTarget_Simple_2\\3DTarget.onnx",
+            "reward": 6.3311937893590615,
+            "creation_time": 1733435588.3901324,
+            "auxillary_file_paths": [
+                "results\\3DTarget_Simple_2\\3DTarget\\3DTarget-127806291.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
