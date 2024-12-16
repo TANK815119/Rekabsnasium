@@ -51,10 +51,10 @@ public class Drone_3DTarget_Redox : Agent
         idealRoll = 0f; //reset roll
         idealYawOmega = 0f; //reset yaw;
 
-        //ResetDrone();
+        ResetDrone();
 
         //make new target position
-        target.localPosition = droneBody.position + new Vector3(Random.Range(-randRange, randRange), Random.Range(-randRange, randRange), Random.Range(-randRange, randRange));
+        target.localPosition = new Vector3(Random.Range(-randRange, randRange), Random.Range(-randRange, randRange), Random.Range(-randRange, randRange));
         target.rotation = Quaternion.Euler(0f, Random.Range(-360f, 360f), 0f);
     }
 
@@ -236,10 +236,10 @@ public class Drone_3DTarget_Redox : Agent
         //float adjustedError = ((180 - yawError) - 90f) / 180f; //values: -0.5 to 0.5, mathches dron rotation to target
         //float yawOmegaPenalty = -1f * Mathf.Abs(idealYawOmega / (maxYawOmega * 4f)); //values -0.25 to 0, penalizes too much yaw-ing
         float yawAlignReward = 1f - (yawError / 180f); //Values:0-1
-        float yawOmegaPenalty = -Mathf.Pow(idealYawOmega / maxYawOmega, 2); ; //values:(-1)-0
+        float yawOmegaPenalty = -Mathf.Pow(idealYawOmega / maxYawOmega, 1); ; //values:(-1)-0
 
         //weight rewards properly
-        float combineRewards = distanceReward * 0.8f + yawAlignReward * 0.2f + yawOmegaPenalty * 0.2f;
+        float combineRewards = distanceReward * 0.7f + yawAlignReward * 0.3f + yawOmegaPenalty * 0.1f;
         AddReward(combineRewards * Time.fixedDeltaTime);
 
     }

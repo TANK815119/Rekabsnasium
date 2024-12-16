@@ -1,6 +1,6 @@
 To get to environment:
 -navigate to the unity project then run venv
-cd C:\Users\reidj\Unity Projects\Rekabnasium
+cd C:\Users\reidj\Git Projects\Rekabsnasium\Rekabnasium
 venv\Scripts\activate
 
 To run always:
@@ -16,7 +16,7 @@ mlagents-learn config/configuration.yaml --initialize-from=[previosWhatever] --r
 To visualize:
 -open brand new command prompt
 -navigate to the unity project then run venv
-cd C:\Users\reidj\Unity Projects\Rekabnasium
+cd C:\Users\reidj\Git Projects\Rekabsnasium\Rekabnasium
 venv\scripts\activate
 tensorboard --logdir results or results/{run_name}
 -open the localhost url
