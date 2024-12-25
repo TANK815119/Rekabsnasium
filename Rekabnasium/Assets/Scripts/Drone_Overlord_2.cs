@@ -59,7 +59,7 @@ public class Drone_Overlord_2 : Agent
 
         // global height akin to barometer
         float globalHeight = droneBody.position.y;
-        sensor.AddObservation(globalHeight); // 1 value
+        sensor.AddObservation(0f); // 1 value DISABLED
 
         // last local(to drone) target offset
         sensor.AddObservation(lastOffset); //3 values

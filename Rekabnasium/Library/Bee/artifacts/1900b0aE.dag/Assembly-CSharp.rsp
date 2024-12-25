@@ -382,7 +382,10 @@
 "Assets/Scripts/Drone_3DTarget_Smooth.cs"
 "Assets/Scripts/Drone_Overlord.cs"
 "Assets/Scripts/Drone_Overlord_2.cs"
+"Assets/Scripts/Drone_Overlord_FPV.cs"
 "Assets/Scripts/Drone_Simception_1.cs"
+"Assets/Scripts/FPVImageProcessor.cs"
+"Assets/Scripts/FPVImageProcessor_Human.cs"
 -langversion:9.0
 
 /deterministic

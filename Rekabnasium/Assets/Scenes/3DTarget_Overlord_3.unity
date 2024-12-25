@@ -568,6 +568,7 @@ MonoBehaviour:
   target: {fileID: 213688127}
   drone: {fileID: 1874929770}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &100017256
 Camera:
   m_ObjectHideFlags: 0
@@ -1777,6 +1778,7 @@ MonoBehaviour:
   target: {fileID: 806412706}
   drone: {fileID: 1189181041}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &230098798
 Camera:
   m_ObjectHideFlags: 0
@@ -1981,6 +1983,7 @@ MonoBehaviour:
   target: {fileID: 388548710}
   drone: {fileID: 1972494032}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &258170876
 Camera:
   m_ObjectHideFlags: 0
@@ -4819,6 +4822,7 @@ MonoBehaviour:
   target: {fileID: 2048592231}
   drone: {fileID: 1079060051}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &751583889
 Camera:
   m_ObjectHideFlags: 0
@@ -5952,6 +5956,7 @@ MonoBehaviour:
   target: {fileID: 1938068243}
   drone: {fileID: 805675010}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &972871258
 Camera:
   m_ObjectHideFlags: 0
@@ -7091,6 +7096,7 @@ MonoBehaviour:
   target: {fileID: 46591436}
   drone: {fileID: 1730091436}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &1081799382
 Camera:
   m_ObjectHideFlags: 0
@@ -10526,6 +10532,7 @@ MonoBehaviour:
   target: {fileID: 601332731}
   drone: {fileID: 151584086}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &1732715323
 Camera:
   m_ObjectHideFlags: 0
@@ -12449,6 +12456,7 @@ MonoBehaviour:
   target: {fileID: 1114799982}
   drone: {fileID: 1532298672}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &1993659049
 Camera:
   m_ObjectHideFlags: 0
@@ -12658,7 +12666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2008633691
 Transform:
   m_ObjectHideFlags: 0
@@ -12740,6 +12748,7 @@ MonoBehaviour:
   target: {fileID: 1490192529}
   drone: {fileID: 993193811}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!1 &2013710439
 GameObject:
   m_ObjectHideFlags: 0
@@ -12788,6 +12797,7 @@ MonoBehaviour:
   target: {fileID: 1855358579}
   drone: {fileID: 1328740776}
   cameraOffset: {x: 0, y: 1, z: -2}
+  lerpSpeed: 1
 --- !u!20 &2013710442
 Camera:
   m_ObjectHideFlags: 0
