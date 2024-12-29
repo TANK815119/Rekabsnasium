@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//Likely very inneficient for multiple agents
+//because its doing this every frame instead of upon request
 
 public class FPVImageProcessor : MonoBehaviour
 {

@@ -37,7 +37,7 @@ public class Drone_3DTarget : Agent
     {
         time = 0f; //reset clock
         this.transform.localPosition = Vector3.zero; //reset positon
-        droneBody.velocity = Vector3.zero; //reset linear velocity
+        droneBody.linearVelocity = Vector3.zero; //reset linear velocity
         this.transform.localRotation = Quaternion.identity; //reset rotation
         droneBody.angularVelocity = Vector3.zero; //reset angular velocity
 
@@ -49,7 +49,7 @@ public class Drone_3DTarget : Agent
     {
         sensor.AddObservation(transform.position); //3 inputs
         sensor.AddObservation(target.position); //3 inputs
-        sensor.AddObservation(droneBody.velocity); //3 inputs
+        sensor.AddObservation(droneBody.linearVelocity); //3 inputs
         sensor.AddObservation(transform.eulerAngles * Mathf.Deg2Rad); //3 inputs
         sensor.AddObservation(droneBody.angularVelocity); //3 inputs
     }

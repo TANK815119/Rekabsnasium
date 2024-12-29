@@ -57,7 +57,7 @@ public class Drone_3DTarget_Simple : Agent
         lastYaw = 0f;
         this.transform.localPosition = Vector3.zero; //reset positon
         this.transform.localRotation = Quaternion.identity; //reset rotation
-        droneBody.velocity = Vector3.zero; //reset linear velocity
+        droneBody.linearVelocity = Vector3.zero; //reset linear velocity
         droneBody.angularVelocity = Vector3.zero; //reset angular velocity
         droneBody.Sleep(); //pause for a moment
 
@@ -69,7 +69,7 @@ public class Drone_3DTarget_Simple : Agent
     {
         sensor.AddObservation(transform.position); //3 inputs
         sensor.AddObservation(target.position); //3 inputs
-        sensor.AddObservation(droneBody.velocity); //3 inputs
+        sensor.AddObservation(droneBody.linearVelocity); //3 inputs
         sensor.AddObservation(transform.eulerAngles * Mathf.Deg2Rad); //3 inputs
         sensor.AddObservation(droneBody.angularVelocity); //3 inputs
     }

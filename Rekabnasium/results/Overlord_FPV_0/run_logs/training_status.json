@@ -1,0 +1,56 @@
+{
+    "Overlord": {
+        "checkpoints": [
+            {
+                "steps": 499985,
+                "file_path": "results\\Overlord_FPV_0\\Overlord\\Overlord-499985.onnx",
+                "reward": -7.553422804312272,
+                "creation_time": 1735439171.3207529,
+                "auxillary_file_paths": [
+                    "results\\Overlord_FPV_0\\Overlord\\Overlord-499985.pt"
+                ]
+            },
+            {
+                "steps": 999990,
+                "file_path": "results\\Overlord_FPV_0\\Overlord\\Overlord-999990.onnx",
+                "reward": -5.790400438125317,
+                "creation_time": 1735445506.3463442,
+                "auxillary_file_paths": [
+                    "results\\Overlord_FPV_0\\Overlord\\Overlord-999990.pt"
+                ]
+            },
+            {
+                "steps": 1499996,
+                "file_path": "results\\Overlord_FPV_0\\Overlord\\Overlord-1499996.onnx",
+                "reward": -4.789859014902716,
+                "creation_time": 1735451805.3576891,
+                "auxillary_file_paths": [
+                    "results\\Overlord_FPV_0\\Overlord\\Overlord-1499996.pt"
+                ]
+            },
+            {
+                "steps": 1610061,
+                "file_path": "results\\Overlord_FPV_0\\Overlord\\Overlord-1610061.onnx",
+                "reward": -4.474247405733913,
+                "creation_time": 1735453249.4017584,
+                "auxillary_file_paths": [
+                    "results\\Overlord_FPV_0\\Overlord\\Overlord-1610061.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1610061,
+            "file_path": "results\\Overlord_FPV_0\\Overlord.onnx",
+            "reward": -4.474247405733913,
+            "creation_time": 1735453249.4017584,
+            "auxillary_file_paths": [
+                "results\\Overlord_FPV_0\\Overlord\\Overlord-1610061.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

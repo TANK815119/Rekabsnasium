@@ -31,7 +31,7 @@ public class Drone_Simception_1 : Agent
     {
         sensor.AddObservation(transform.position.y); //1 input
         sensor.AddObservation(target.position.y); //1 input
-        sensor.AddObservation(droneBody.velocity.y); //1 input
+        sensor.AddObservation(droneBody.linearVelocity.y); //1 input
     }
 
     public override void OnActionReceived(ActionBuffers actions)

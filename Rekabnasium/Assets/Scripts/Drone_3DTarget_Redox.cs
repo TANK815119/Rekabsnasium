@@ -65,7 +65,7 @@ public class Drone_3DTarget_Redox : Agent
         transform.localRotation = Quaternion.identity;
 
         // 2. Reset Rigidbody's linear and angular velocity
-        droneBody.velocity = Vector3.zero;
+        droneBody.linearVelocity = Vector3.zero;
         droneBody.angularVelocity = Vector3.zero;
 
         // 3. Force sleep after resetting velocities (prevents unexpected waking)
@@ -87,7 +87,7 @@ public class Drone_3DTarget_Redox : Agent
         sensor.AddObservation(Mathf.Cos(relativeYaw)); // 1 value
 
         // 3️ Local velocity
-        Vector3 localVelocity = transform.InverseTransformDirection(droneBody.velocity);
+        Vector3 localVelocity = transform.InverseTransformDirection(droneBody.linearVelocity);
         sensor.AddObservation(localVelocity); // 3 values
 
         // 4️ Forward and Up vectors for orientation

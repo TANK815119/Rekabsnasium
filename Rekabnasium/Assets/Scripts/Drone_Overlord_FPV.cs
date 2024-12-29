@@ -10,6 +10,7 @@ public class Drone_Overlord_FPV : Agent
     [SerializeField] private Transform POI; //point of interest
     [SerializeField] private Transform target;
     [SerializeField] private Transform drone;
+    [SerializeField] private Camera FPVCamera;
    
     [SerializeField] private float episodeLength = 15f;
     [SerializeField] private float maxDistance = 25f;
@@ -49,7 +50,7 @@ public class Drone_Overlord_FPV : Agent
     public override void CollectObservations(VectorSensor sensor) //TOTAL: 11
     {
         // velocity akin to accelerometer
-        Vector3 velocity = droneBody.velocity;
+        Vector3 velocity = droneBody.linearVelocity;
         sensor.AddObservation(velocity); // 3 values
 
         // global drone yaw yaw (sin/cos for direction) akin to compass
@@ -60,14 +61,19 @@ public class Drone_Overlord_FPV : Agent
         // last local(to drone) target offset
         sensor.AddObservation(lastOffset); //3 values
 
-        // POI position(TEMPORARY) relative to target for debugging inputs
-        //Vector3 relativePosition = target.InverseTransformPoint(POI.position);
-        sensor.AddObservation(POI.position - drone.position); // 3 values
+        // POI screenspace position and oncreen tell
+        Vector2 screenPos = FPVCamera.WorldToViewportPoint(POI.position);
+        bool onScreen = true;
+        if (screenPos.x < 0f || screenPos.y < 0f|| screenPos.x > 1f|| screenPos.y > 1f)
+        {
+            onScreen = false;
+            screenPos = Vector3.zero;
+        }
+        sensor.AddObservation(onScreen); //1 value
+        sensor.AddObservation(screenPos); //2 values
+        
 
-        // render texture
-        //unimplemented for now
-        //may combine low resolution RenderTexture
-        //and POI reycast in one big image input
+        // render texture inputs are handled automatically i think
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -111,7 +117,7 @@ public class Drone_Overlord_FPV : Agent
         }
 
         //integrate velocity into offset to fix position
-        offset -= droneBody.velocity * Time.fixedDeltaTime;
+        offset -= droneBody.linearVelocity * Time.fixedDeltaTime;
 
         //set target position and rotation
         target.position = drone.position + offset;

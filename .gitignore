@@ -75,3 +75,4 @@ crashlytics-build.properties
 libburst-llvm-16.dylib
 dnnl.lib
 torch_cpu.dll
+site-packages

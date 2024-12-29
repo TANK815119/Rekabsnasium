@@ -40,7 +40,7 @@ public class Drone_Overlord : Agent
     public override void CollectObservations(VectorSensor sensor) //TOTAL: 12
     {
         // velocity akin to accelerometer
-        Vector3 velocity = droneBody.velocity;
+        Vector3 velocity = droneBody.linearVelocity;
         sensor.AddObservation(velocity); // 3 values
 
         // global drone yaw yaw (sin/cos for direction) akin to compass

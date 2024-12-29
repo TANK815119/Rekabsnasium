@@ -72,7 +72,7 @@ public class Drone_3DTarget_Smooth : Agent
         transform.localRotation = Quaternion.identity;
 
         // 2. Reset Rigidbody's linear and angular velocity
-        droneBody.velocity = Vector3.zero;
+        droneBody.linearVelocity = Vector3.zero;
         droneBody.angularVelocity = Vector3.zero;
 
         // 3. Force sleep after resetting velocities (prevents unexpected waking)
@@ -87,7 +87,7 @@ public class Drone_3DTarget_Smooth : Agent
         sensor.AddObservation(transform.position); //3 inputs
         sensor.AddObservation(target.position); //3 inputs
         sensor.AddObservation(target.eulerAngles * Mathf.Deg2Rad); //3 inputs
-        sensor.AddObservation(droneBody.velocity); //3 inputs
+        sensor.AddObservation(droneBody.linearVelocity); //3 inputs
         sensor.AddObservation(transform.eulerAngles * Mathf.Deg2Rad); //3 inputs
         sensor.AddObservation(droneBody.angularVelocity); //3 inputs
     }

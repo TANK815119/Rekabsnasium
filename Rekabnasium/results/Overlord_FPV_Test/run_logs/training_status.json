@@ -1,0 +1,29 @@
+{
+    "Overlord": {
+        "checkpoints": [
+            {
+                "steps": 176,
+                "file_path": "results\\Overlord_FPV_Test\\Overlord\\Overlord-176.onnx",
+                "reward": -7.435689869026343,
+                "creation_time": 1735432839.9675088,
+                "auxillary_file_paths": [
+                    "results\\Overlord_FPV_Test\\Overlord\\Overlord-176.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 176,
+            "file_path": "results\\Overlord_FPV_Test\\Overlord.onnx",
+            "reward": -7.435689869026343,
+            "creation_time": 1735432839.9675088,
+            "auxillary_file_paths": [
+                "results\\Overlord_FPV_Test\\Overlord\\Overlord-176.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

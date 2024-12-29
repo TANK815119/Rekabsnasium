@@ -49,7 +49,7 @@ public class Drone_Overlord_2 : Agent
     public override void CollectObservations(VectorSensor sensor) //TOTAL: 12
     {
         // velocity akin to accelerometer
-        Vector3 velocity = droneBody.velocity;
+        Vector3 velocity = droneBody.linearVelocity;
         sensor.AddObservation(velocity); // 3 values
 
         // global drone yaw yaw (sin/cos for direction) akin to compass
@@ -115,7 +115,7 @@ public class Drone_Overlord_2 : Agent
         }
 
         //integrate velocity into offset to fix position
-        offset -= droneBody.velocity * Time.fixedDeltaTime;
+        offset -= droneBody.linearVelocity * Time.fixedDeltaTime;
 
         //set target position and rotation
         target.position = drone.position + offset;

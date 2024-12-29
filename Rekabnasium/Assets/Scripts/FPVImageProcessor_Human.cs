@@ -35,6 +35,10 @@ public class FPVImageProcessor_Human : MonoBehaviour
             //make a little dot to reresent the screenspace positon of the POI for humans
             MarkTexture(interTexture, screenPos.x, screenPos.y);
         }
+        else
+        {
+            //Debug.Log("POI not on screenspace");
+        }
 
         //Convert the Texture2D to a RenderTexture ans assign
         RenderTexture outputTexture = Texture2DToRenderTexture(interTexture);
