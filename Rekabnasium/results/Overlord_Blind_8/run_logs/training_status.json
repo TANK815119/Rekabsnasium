@@ -1,0 +1,65 @@
+{
+    "Overlord": {
+        "checkpoints": [
+            {
+                "steps": 3499998,
+                "file_path": "results\\Overlord_Blind_8\\Overlord\\Overlord-3499998.onnx",
+                "reward": 19.6581486197213,
+                "creation_time": 1735559752.436509,
+                "auxillary_file_paths": [
+                    "results\\Overlord_Blind_8\\Overlord\\Overlord-3499998.pt"
+                ]
+            },
+            {
+                "steps": 3999996,
+                "file_path": "results\\Overlord_Blind_8\\Overlord\\Overlord-3999996.onnx",
+                "reward": 19.209898351765364,
+                "creation_time": 1735564055.9591296,
+                "auxillary_file_paths": [
+                    "results\\Overlord_Blind_8\\Overlord\\Overlord-3999996.pt"
+                ]
+            },
+            {
+                "steps": 4499994,
+                "file_path": "results\\Overlord_Blind_8\\Overlord\\Overlord-4499994.onnx",
+                "reward": 18.926693846815724,
+                "creation_time": 1735568340.3252847,
+                "auxillary_file_paths": [
+                    "results\\Overlord_Blind_8\\Overlord\\Overlord-4499994.pt"
+                ]
+            },
+            {
+                "steps": 4999997,
+                "file_path": "results\\Overlord_Blind_8\\Overlord\\Overlord-4999997.onnx",
+                "reward": 19.27797409132415,
+                "creation_time": 1735572617.4104064,
+                "auxillary_file_paths": [
+                    "results\\Overlord_Blind_8\\Overlord\\Overlord-4999997.pt"
+                ]
+            },
+            {
+                "steps": 5422198,
+                "file_path": "results\\Overlord_Blind_8\\Overlord\\Overlord-5422198.onnx",
+                "reward": 20.537980137035294,
+                "creation_time": 1735576327.2478993,
+                "auxillary_file_paths": [
+                    "results\\Overlord_Blind_8\\Overlord\\Overlord-5422198.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5422198,
+            "file_path": "results\\Overlord_Blind_8\\Overlord.onnx",
+            "reward": 20.537980137035294,
+            "creation_time": 1735576327.2478993,
+            "auxillary_file_paths": [
+                "results\\Overlord_Blind_8\\Overlord\\Overlord-5422198.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

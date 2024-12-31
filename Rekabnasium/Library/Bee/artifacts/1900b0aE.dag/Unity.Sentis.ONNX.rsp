@@ -372,7 +372,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit/net40/unity-custom/nunit.framework.dll"
--r:"Library/PackageCache/com.unity.sentis/Editor/ONNX/Google.Protobuf_Packed.dll"
+-r:"Library/PackageCache/com.unity.ml-agents/Plugins/Google.Protobuf_Packed.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Sentis.ref.dll"

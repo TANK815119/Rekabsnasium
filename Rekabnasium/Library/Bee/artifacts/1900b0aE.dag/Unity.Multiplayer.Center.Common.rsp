@@ -374,6 +374,7 @@
 -r:"Library/PackageCache/com.unity.collab-proxy/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"Library/PackageCache/com.unity.collections/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit/net40/unity-custom/nunit.framework.dll"
+-r:"Library/PackageCache/com.unity.ml-agents/Plugins/Google.Protobuf_Packed.dll"
 -r:"Library/PackageCache/com.unity.ml-agents/Plugins/ProtoBuffer/Grpc.Core.dll"
 -r:"Library/PackageCache/com.unity.ml-agents/Plugins/System.IO.Abstractions.dll"
 -r:"Library/PackageCache/com.unity.ml-agents/Plugins/System.IO.Abstractions.TestingHelpers.dll"

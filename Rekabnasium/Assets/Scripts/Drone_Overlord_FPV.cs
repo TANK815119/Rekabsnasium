@@ -44,7 +44,7 @@ public class Drone_Overlord_FPV : Agent
         droneTargeting.ResetDrone(); //reset drone
 
         //make new POI
-        POI.localPosition = new Vector3(0f, Random.Range(0f, randRange), 0f);
+        POI.localPosition = new Vector3(Random.Range(-randRange, randRange), Random.Range(0f, randRange), Random.Range(-randRange, randRange));
     }
 
     public override void CollectObservations(VectorSensor sensor) //TOTAL: 11
@@ -109,6 +109,8 @@ public class Drone_Overlord_FPV : Agent
 
     public void FixedUpdate()
     {
+        ClockTick();
+
         decisionTime += Time.fixedDeltaTime;
         if (decisionTime > decisionTImeMax || ((target.position - drone.position).magnitude < decisionRange && decisionTime > decisionTImeMin))
         {
@@ -125,6 +127,9 @@ public class Drone_Overlord_FPV : Agent
 
         //calculate reward
         CalculateReward();
+
+        //Check if real close to give big doe of reward and reset
+        CheckPOIHit();
     }
 
     private void CalculateReward()
@@ -139,10 +144,20 @@ public class Drone_Overlord_FPV : Agent
         AddReward(combineRewards * Time.fixedDeltaTime);
     }
 
-    public void Update()
+    private void CheckPOIHit()
+    {
+        if(Vector3.Distance(drone.position, POI.position) < 0.5f)
+        {
+            float timeRemaining = episodeLength - time;
+            AddReward(2f * timeRemaining);
+            EndEpisode();
+        }
+    }
+
+    public void ClockTick()
     {
         //little clock
-        time += Time.deltaTime;
+        time += Time.fixedDeltaTime; //fixed delta is better because thats what mlagents runs on
         if (time >= episodeLength)
         {
             EndEpisode();
