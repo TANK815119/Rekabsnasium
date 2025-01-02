@@ -238,8 +238,11 @@ public class Drone_3DTarget_Redox : Agent
         float yawAlignReward = 1f - (yawError / 180f); //Values:0-1
         float yawOmegaPenalty = -Mathf.Pow(idealYawOmega / maxYawOmega, 1); ; //values:(-1)-0
 
+        //calculate reward for stability
+        float angularStabilityReward = Mathf.Max(-1f, 1f - 2f * (droneBody.angularVelocity.magnitude / droneBody.maxAngularVelocity)); //0 to 1f range
+
         //weight rewards properly
-        float combineRewards = distanceReward * 0.7f + yawAlignReward * 0.3f + yawOmegaPenalty * 0.1f;
+        float combineRewards = distanceReward * 0.5f + yawAlignReward * 0.2f + yawOmegaPenalty * 0.15f + angularStabilityReward * 0.15f;
         AddReward(combineRewards * Time.fixedDeltaTime);
 
     }
