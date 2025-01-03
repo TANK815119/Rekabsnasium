@@ -432,6 +432,7 @@
 "Assets/Scripts/Drone_Simception_1.cs"
 "Assets/Scripts/FPVImageProcessor.cs"
 "Assets/Scripts/FPVImageProcessor_Human.cs"
+"Assets/Scripts/TargetLooker.cs"
 -langversion:9.0
 /deterministic
 /optimize+

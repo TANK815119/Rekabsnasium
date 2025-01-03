@@ -54,7 +54,7 @@ public class Drone_3DTarget_Scaled : Agent
         ResetDrone();
 
         //make new target position
-        target.localPosition = new Vector3(Random.Range(-randRange, randRange), Random.Range(-randRange, randRange), Random.Range(-randRange, randRange));
+        target.localPosition = new Vector3(Random.Range(-randRange, randRange), Random.Range(-0f, 0f), Random.Range(-randRange, randRange));
         target.rotation = Quaternion.Euler(0f, Random.Range(-360f, 360f), 0f);
     }
 
@@ -137,7 +137,7 @@ public class Drone_3DTarget_Scaled : Agent
 
     private void OnCollisionEnter(Collision collision)
     {
-        AddReward(-2f * (episodeLength - time));
+        AddReward(1f * (episodeLength - time));
         EndEpisode();
     }
 
@@ -237,7 +237,7 @@ public class Drone_3DTarget_Scaled : Agent
     {
         //calculate reward from distance
         float distance = Vector3.Distance(this.transform.position, target.transform.position);
-        float sigmoid = 1f / (1f + Mathf.Exp(-distance / 2f)); //dividing by 5f makes the functions slope less steep(good for large distnace)
+        float sigmoid = 1f / (1f + Mathf.Exp(-distance / 1f)); //dividing by 5f makes the functions slope less steep(good for large distnace)
         float distanceReward = (-4f * (sigmoid - 0.5f)) + 1f; // 1 value at zero distance and -1 at max distance
         //float distanceReward = 1f - Mathf.Clamp01(distance / maxDistance); //values: 0-1
 

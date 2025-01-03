@@ -374,6 +374,11 @@ Transform:
   - {fileID: 1564095037}
   m_Father: {fileID: 2094893470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &67681341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3962141152869489390, guid: e028ec3e75f7ce14b89b5752f66a8581, type: 3}
+  m_PrefabInstance: {fileID: 1490192528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &94618667
 GameObject:
   m_ObjectHideFlags: 0
@@ -5279,7 +5284,7 @@ PrefabInstance:
     - target: {fileID: 6657364390260916094, guid: cb2dc4d95dabc254289c1a56a71b0410, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 6c9f353d43c18654c8826a047a7da1ff, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: e6b08466808fca34cb5154429be80fa7, type: 3}
     - target: {fileID: 6657364390260916094, guid: cb2dc4d95dabc254289c1a56a71b0410, type: 3}
       propertyPath: m_BehaviorName
       value: 3DTarget
@@ -7077,13 +7082,29 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5107809125942015291, guid: e028ec3e75f7ce14b89b5752f66a8581, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1628192929}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3962141152869489390, guid: e028ec3e75f7ce14b89b5752f66a8581, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1490192530}
   m_SourcePrefab: {fileID: 100100000, guid: e028ec3e75f7ce14b89b5752f66a8581, type: 3}
 --- !u!4 &1490192529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5107809125942015291, guid: e028ec3e75f7ce14b89b5752f66a8581, type: 3}
   m_PrefabInstance: {fileID: 1490192528}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1490192530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67681341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb3f3234cd47394fb0e5eb2f0242ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drone: {fileID: 993193811}
 --- !u!1001 &1492701210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7841,7 +7862,7 @@ GameObject:
   - component: {fileID: 1628192932}
   - component: {fileID: 1628192931}
   - component: {fileID: 1628192930}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8674,8 +8695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1691604874}
-  agentCount: 10
-  offset: {x: 1, y: 0, z: 0}
+  agentCount: 100
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1706500542
 GameObject:
   m_ObjectHideFlags: 0
