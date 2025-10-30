@@ -21,3 +21,5 @@ In-Progress:
 -Vision-based instructional AI for obstacle avoidance
 
 -Bipedal locomoation of a physically-animated active ragdol
+
+This project is licensed under the [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/) license.
